@@ -4,12 +4,12 @@ describe "StaticPages" do
 
   describe "Home Page" do
 
-    it "should have the h1 'Sample App'" do
+    it "should have the h1 'Home'" do
       visit '/static_pages/home'
       page.should have_selector('h1', :text => 'Sample App')
     end
 
-    it "should have the Title 'Sample App'" do
+    it "should have the Title 'Home'" do
       visit '/static_pages/home'
       page.should have_selector('title', 
                                 :text => "Ruby on Rails Tutorial Sample App | Home")
